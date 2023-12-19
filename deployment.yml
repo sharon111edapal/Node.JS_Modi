@@ -15,7 +15,7 @@ spec:
         app: nodejsapp
     spec:
       containers:
-      - name: node.jsapp
+      - name: nodejsapp
         image: localhost/nodejs_mode:$BUILD_ID
         ports:
         - containerPort: 5000
