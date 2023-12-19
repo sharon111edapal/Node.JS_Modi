@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodejsapp
-        image: localhost/nodejs_mode:$BUILD_ID
+        image: sharon111edapal/nodejs_modi:$BUILD_ID
         ports:
         - containerPort: 5000
