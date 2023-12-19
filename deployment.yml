@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node.jsapp
+      app: nodejsapp
   template:
     metadata:
       labels:
-        app: node.jsapp
+        app: nodejsapp
     spec:
       containers:
       - name: node.jsapp
