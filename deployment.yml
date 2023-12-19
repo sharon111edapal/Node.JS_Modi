@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-deployment
+  name: nodejsdeployment
   labels:
     app: nodejs
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node.js_app
+      app: node.jsapp
   template:
     metadata:
       labels:
-        app: node.js_app
+        app: node.jsapp
     spec:
       containers:
-      - name: node.js_app
+      - name: node.jsapp
         image: localhost/nodejs_mode:$BUILD_ID
         ports:
         - containerPort: 5000
